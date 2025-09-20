@@ -1,14 +1,13 @@
 import React from "react";
-import { View, Text, StyleSheet, Button } from "react-native";
+import { View, Text, StyleSheet,Button } from "react-native";
 
-const Home = ({ navigation }) => {
+const Profile = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Chay pi lo or kaam kro!</Text>
-            <Button title="Go to Profile" onPress={() => navigation.navigate("Profile")}
-            />
+            <Text style={styles.text}>This is the Profile Screen</Text>
+            <Button title="Back To Home" onPress={() => navigation.navigate("Home")} />
         </View>
-    );
+    ); 
 }
 const styles = StyleSheet.create({
     container: {
@@ -24,4 +23,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Home;
+export default Profile;
